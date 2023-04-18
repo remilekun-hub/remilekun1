@@ -5,7 +5,7 @@
 }
 html {
   scroll-behavior: smooth;
-  font-size: 16px;
+  font-size: 15px;
   scroll-behavior: smooth;
 }
 body {
@@ -93,6 +93,18 @@ section {
 .contact-section {
   background-color: #333;
 }
+
+.contact-container .top {
+  margin-bottom: 1.5rem;
+}
+.contact-container .top h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+.contact-container .top p {
+  text-align: center;
+}
 form div {
   display: flex;
   flex-direction: column;
@@ -126,7 +138,7 @@ textarea {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  margin-top: 20px;
+  margin-top: 50px;
   margin-left: auto;
   cursor: pointer;
   font-family: inherit;

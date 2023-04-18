@@ -5,7 +5,13 @@ function ContactSection() {
   return (
     <section id="contact" className="contact-section">
       <div className="container contact-container">
-        contact here
+        <div className="top">
+          <h1>Contact</h1>
+          <p>
+            i would love to hear about your project and how i could help. Please
+            fill in the form, and i would get back to you as soon possible.
+          </p>
+        </div>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -37,7 +43,7 @@ function ContactSection() {
               placeholder="message here"
             ></textarea>
           </div>
-          <input type="submit" value="SUBMIT" className="submit" />
+          <input type="submit" value="SEND MESSAGE" className="submit" />
         </form>
       </div>
     </section>
