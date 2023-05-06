@@ -40,7 +40,7 @@ function ContactSection() {
               id=""
               rows="5"
               cols="30"
-              placeholder="message here"
+              placeholder="message"
             ></textarea>
           </div>
           <input type="submit" value="SEND MESSAGE" className="submit" />
