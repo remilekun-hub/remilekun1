@@ -226,8 +226,22 @@ footer {
   }
 }
 @media only screen and (min-width: 1024px) {
-  .contact-container {
+  /* contact section */
+  .contact-section {
   }
+  .contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+  }
+  .contact-container .top h1,
+  .contact-container .top p {
+    text-align: left;
+  }
+  .contact-container .top h1 {
+    font-size: 3rem;
+  }
+  /* projects section */
   .projects-container .top h1 {
     font-size: 3rem;
   }
