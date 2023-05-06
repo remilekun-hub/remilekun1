@@ -13,8 +13,9 @@ function ProjectsSection() {
           </a>
         </div>
         <div className="bottom">
+          <Project src={myteam} name={"myteam"} link={"#"} order />
           <Project src={myteam} name={"myteam"} link={"#"} />
-          <Project src={myteam} name={"myteam"} link={"#"} />
+          <Project src={myteam} name={"myteam"} link={"#"} order />
         </div>
       </div>
     </section>

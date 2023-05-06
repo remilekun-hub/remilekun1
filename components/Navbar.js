@@ -23,13 +23,6 @@ function Navbar() {
             <li>
               <a href="#">PROJECTS</a>
             </li>
-
-            <li>
-              <a href="#">hello</a>
-            </li>
-            <li>
-              <a href="#">hello</a>
-            </li>
           </ul>
         </div>
       </nav>

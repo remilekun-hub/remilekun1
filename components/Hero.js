@@ -1,10 +1,16 @@
 import React from "react";
+import Image from "next/image";
+import me from "../public/assets/atanda remilekun.jpg";
 
 function Hero() {
   return (
     <section className="hero_section">
       <div className="container hero">
-        <div>
+        <div className="hero-image">
+          <img src="../assets/atanda remilekun.jpg" alt="atanda remilekun" />
+          <span />
+        </div>
+        <div className="hero-text">
           <h1>
             Nice to meet you!
             <br />
@@ -20,7 +26,6 @@ function Hero() {
             Contact Me
           </a>
         </div>
-        <div></div>
       </div>
     </section>
   );

@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 
-function Project({ src, name, link }) {
+function Project({ src, name, link, order }) {
   return (
     <div className="project">
-      <div className="project-image">
+      <div className={`project-image ${order && "project-reverse"}`}>
         <Image
           src={src}
           alt={`${name} image`}
