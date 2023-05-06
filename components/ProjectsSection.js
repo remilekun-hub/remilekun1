@@ -1,4 +1,6 @@
 import React from "react";
+import Project from "./Project";
+import myteam from "../public/assets/myteam.png";
 
 function ProjectsSection() {
   return (
@@ -11,9 +13,8 @@ function ProjectsSection() {
           </a>
         </div>
         <div className="bottom">
-          <div>hello</div>
-          <div>hello</div>
-          <div>hello</div>
+          <Project src={myteam} name={"myteam"} link={"#"} />
+          <Project src={myteam} name={"myteam"} link={"#"} />
         </div>
       </div>
     </section>

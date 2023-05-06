@@ -2,20 +2,21 @@ import React from "react";
 
 function Hero() {
   return (
-    <section class="hero_section">
-      <div class="container hero">
+    <section className="hero_section">
+      <div className="container hero">
         <div>
           <h1>
-            I'm Remilekun.
+            Nice to meet you!
             <br />
-            <span class="name"> Nice to meet you!</span>
+            I'm {""}
+            <span className="name">Remilekun.</span>
           </h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
             animi excepturi neque, ducimus nemo eos dolore rem, aut nisi odio
             deserunt ipsam dolor illo nesciunt sint praesentium.
           </p>
-          <a href="#contact" class="contact">
+          <a href="#contact" className="contact">
             Contact Me
           </a>
         </div>
