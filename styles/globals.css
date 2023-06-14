@@ -35,7 +35,7 @@ img {
   margin: 0 auto;
 }
 section {
-  padding: 2.5rem 0;
+  padding: 5rem 0;
 }
 /* header */
 .header {
@@ -48,6 +48,7 @@ section {
   align-items: center;
   transition: 0.3s;
   height: 85px;
+  background-color: #191919;
 }
 
 .navbar {
@@ -102,15 +103,54 @@ section {
   font-weight: 500;
   letter-spacing: 1px;
 }
+
+.skills-container h1 {
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+  text-align: center;
+}
+
+.skills-title {
+  margin-bottom: 30px;
+}
+.skills-title h3 {
+  font-size: 17px;
+  margin-bottom: 17px;
+}
+.skills-subtitle-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+.skills-subtitle-container p {
+  background-color: white;
+  color: black;
+  padding: 5px 13px;
+  border-radius: 3px;
+  transition: 0.3s;
+  transition-property: transform, background-color, font-weight;
+  cursor: pointer;
+  font-weight: 500;
+}
+.skills-subtitle-container p:hover {
+  transform: scale(1.17);
+  background-color: cyan;
+}
 /* projects section */
+.projects-section {
+  background-color: whitesmoke;
+  color: black;
+}
 .projects-container .top {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
 }
 .projects-container .top h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  text-align: left;
 }
 .projects-container .bottom {
   display: grid;
@@ -127,6 +167,15 @@ section {
   width: 100%;
   height: auto;
 }
+.project .project-text {
+  margin-top: 12px;
+}
+.project-text h2 {
+  margin-bottom: 7px;
+}
+.project-text p {
+  margin-bottom: 8px;
+}
 
 /* contact section */
 .contact-section {
@@ -139,8 +188,8 @@ section {
 
 .contact-container .top h1 {
   text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 1.2rem;
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
 }
 .contact-container .top p {
   text-align: center;
@@ -196,8 +245,11 @@ footer {
   padding-top: 1.5rem;
 }
 @media only screen and (min-width: 500px) {
+  .skills-container h1 {
+    font-size: 2.4rem;
+  }
   .projects-container .top h1 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
   .contact-container {
     max-width: 450px;
@@ -207,7 +259,7 @@ footer {
     margin-bottom: 2.7rem;
   }
   .contact-container .top h1 {
-    font-size: 2.3rem;
+    font-size: 2.4rem;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -260,7 +312,21 @@ footer {
     width: 100%;
     height: 100%;
   }
+  .skills-container h1 {
+    font-size: 2.7rem;
+  }
+  .skills-title {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  .skills-title h3 {
+    font-size: 19px;
+    margin-bottom: 14px;
+  }
 
+  .skills-subtitle-container p {
+    font-size: 17px;
+  }
   .projects-container .top h1 {
     font-size: 2.7rem;
   }
@@ -295,6 +361,9 @@ footer {
   }
 }
 @media only screen and (min-width: 1024px) {
+  section {
+    padding: 5rem 0;
+  }
   .hero {
     padding-top: 50px;
   }
@@ -306,6 +375,17 @@ footer {
   .hero p {
     margin-bottom: 1.8rem;
     text-align: left;
+  }
+  .skills-container h1 {
+    font-size: 3.5rem;
+  }
+  .skills-title h3 {
+    font-size: 20px;
+  }
+
+  /* projects section */
+  .projects-container .top h1 {
+    font-size: 3.5rem;
   }
   /* contact section */
   .contact-section {
@@ -325,10 +405,6 @@ footer {
     text-align: left;
   }
   .contact-container .top h1 {
-    font-size: 3rem;
-  }
-  /* projects section */
-  .projects-container .top h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }

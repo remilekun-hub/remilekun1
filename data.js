@@ -4,83 +4,67 @@ const data = [
     subtitle: [
       {
         name: "JavaScript",
-        image: "yggfihfui.jpg",
+      },
+      {
+        name: "TypeScript",
+      },
+    ],
+  },
+
+  {
+    title: "FrontEnd",
+    subtitle: [
+      {
+        name: "Html",
+      },
+      {
+        name: "CSS",
+      },
+      {
+        name: "React",
+      },
+      {
+        name: "Next Js",
+      },
+
+      {
+        name: "Tailwind CSS",
       },
     ],
   },
   {
-    title: "Frameworks",
+    title: "BackEnd",
     subtitle: [
       {
-        name: "React",
-        image: "yggfihfui.jpg",
-      },
-      {
-        name: "NextJs",
-        image: "yggfihfui.jpg",
-      },
-      {
-        name: "Tailwind CSS",
-        image: "yggfihfui.jpg",
-      },
-      {
-        name: "Redux",
-        image: "",
+        name: "Node JS",
       },
       {
         name: "Express",
-        image: "",
+      },
+      {
+        name: "Mongo DB",
+      },
+      {
+        name: "Firebase",
       },
     ],
   },
-  {
-    title: "Cms",
-    subtitle: [
-      {
-        name: "Wordpress",
-        image: "yggfihfui.jpg",
-      },
-      {
-        name: "Sanity",
-        image: "yggfihfui.jpg",
-      },
-    ],
-  },
+  // {
+  //   title: "Cms",
+  //   subtitle: [
+  //     {
+  //       name: "Wordpress",
+  //     },
+  //   ],
+  // },
   {
     title: "Tools",
     subtitle: [
       {
-        name: "npm",
-        image: "yggfihfui.jpg",
+        name: "Git",
       },
       {
-        name: "NodeJS",
-        image: "yggfihfui.jpg",
-      },
-      {
-        name: "Mongo DB",
-        image: "yggfihfui.jpg",
-      },
-      {
-        name: "Firebase",
-        image: "yggfihfui.jpg",
-      },
-      {
-        name: "git",
-        image: "",
-      },
-    ],
-  },
-  {
-    title: "Standards & paradigms",
-    subtitle: [
-      {
-        name: "REST API",
-        image: "",
-      },
-      {
-        name: "semnatic web",
-        image: "",
+        name: "Figma",
       },
     ],
   },

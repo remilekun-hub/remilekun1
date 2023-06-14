@@ -18,10 +18,10 @@ function Navbar() {
         <div className="nav_menu">
           <ul>
             <li>
-              <a href="#">SKILLS</a>
+              <a href="#skills">SKILLS</a>
             </li>
             <li>
-              <a href="#">PROJECTS</a>
+              <a href="#projects">PROJECTS</a>
             </li>
           </ul>
         </div>

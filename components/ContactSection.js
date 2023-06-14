@@ -7,6 +7,7 @@ function ContactSection() {
       <div className="container contact-container">
         <div className="top">
           <h1>Contact</h1>
+
           <p>
             i would love to hear about your project and how i could help. Please
             fill in the form, and i would get back to you as soon possible.

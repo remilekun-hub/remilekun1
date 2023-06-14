@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-function Project({ src, name, link, order }) {
+function Project({ src, name, link, order, tech }) {
   return (
     <div className="project">
       <div className={`project-image ${order && "project-reverse"}`}>
@@ -17,8 +17,10 @@ function Project({ src, name, link, order }) {
         <div>
           <h2>{name}</h2>
           <p>jbxkjcbdbakjdbfkad abdfaf ivbk vmsb is uoV dshaefa</p>
-          <p>Html, Css</p>
-          <a href={link} className="contact">
+
+          <p> {tech.join(", ")}</p>
+
+          <a href={link} className="contact project-link">
             Live link
           </a>
         </div>
