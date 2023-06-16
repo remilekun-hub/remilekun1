@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <header className="header">
       <nav className="container navbar">
-        <div>Remilekun</div>
+        <div className="logo">REMILEKUN</div>
         <div className="nav_menu">
           <ul>
             <li>
