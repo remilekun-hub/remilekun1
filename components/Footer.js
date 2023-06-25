@@ -7,7 +7,11 @@ function Footer() {
         <div className="footer-main">
           <div className="logo">REMILEKUN</div>
           <div className="social__icons-wrapper">
-            <a target="_blank" href="https://twitter.com/Renod007">
+            <a
+              target="_blank"
+              href="https://twitter.com/Renod007"
+              rel="noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -19,7 +23,7 @@ function Footer() {
               </svg>
             </a>
 
-            <a href="https://facebook.com" target="_blank">
+            <a href="https://facebook.com" target="_blank" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
@@ -31,7 +35,7 @@ function Footer() {
               </svg>
             </a>
 
-            <a target="_blank" href="https://instagram.com">
+            <a target="_blank" href="https://instagram.com" rel="noreferrer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="30"
