@@ -7,9 +7,9 @@ function Project({ src, name, link, order, subtitle, tech }) {
     <div className="project">
       <motion.div
         className={`project-image ${order && "project-reverse"}`}
-        initial={{ opacity: 0, x: `${order ? 70 : -70}` }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
         <Image
@@ -34,7 +34,7 @@ function Project({ src, name, link, order, subtitle, tech }) {
 
           <p className="project-tech"> {tech.join(", ")}</p>
 
-          <a href={link} className="contact project-link">
+          <a href={link} className="contact project-link" target="_blank">
             Live link
           </a>
         </div>

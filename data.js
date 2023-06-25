@@ -1,6 +1,6 @@
 const data = [
   {
-    title: "Languages",
+    title: "Programming Languages",
     subtitle: [
       {
         name: "JavaScript",
@@ -41,11 +41,13 @@ const data = [
       {
         name: "Express",
       },
+    ],
+  },
+  {
+    title: "Database Management",
+    subtitle: [
       {
         name: "Mongo DB",
-      },
-      {
-        name: "Firebase",
       },
     ],
   },

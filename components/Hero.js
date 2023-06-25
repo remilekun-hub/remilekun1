@@ -1,66 +1,31 @@
 import React from "react";
-import { motion } from "framer-motion";
 
 function Hero() {
-  const heroVariant = {
-    hidden: {
-      opacity: 1,
-    },
-    start: {
-      opacity: 1,
-      transition: {
-        delayChildren: 0,
-        staggerChildren: 0.2,
-      },
-    },
-  };
-  const heroText = {
-    hidden: {
-      y: 50,
-      opacity: 0,
-    },
-    start: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.5 },
-    },
-  };
   return (
-    <section className="hero_section">
+    <section className="hero_section" id="hero">
       <div className="container hero">
         <div className="hero-image">
-          <motion.img
-            src="../assets/atanda remilekun.jpg"
-            alt="atanda remilekun"
-            initial={{ opacity: 0, height: 0 }}
-            whileInView={{ opacity: 1, height: "100%" }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            viewport={{ once: true }}
-          />
+          <img src="../assets/atanda remilekun.webp" alt="atanda remilekun" />
         </div>
-        <motion.div
-          className="hero-text"
-          variants={heroVariant}
-          animate="start"
-          initial="hidden"
-        >
-          <motion.h1 variants={heroText}>
+
+        <div className="hero-text">
+          <h1>
             Nice to meet you!
             <br />
             I'm {""}
             <span className="name">Remilekun.</span>
-          </motion.h1>
+          </h1>
 
-          <motion.p variants={heroText}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-            animi excepturi neque, ducimus nemo eos dolore rem, aut nisi odio
-            deserunt ipsam dolor illo nesciunt sint praesentium.
-          </motion.p>
+          <p>
+            A front-end engineer passionate about building acessible, responsive
+            and aesthetically pleasing web apps / web sites that users love. I
+            work on the back-end also
+          </p>
 
-          <motion.a href="#contact" className="contact" variants={heroText}>
+          <a href="#contact" className="contact">
             Contact Me
-          </motion.a>
-        </motion.div>
+          </a>
+        </div>
       </div>
     </section>
   );

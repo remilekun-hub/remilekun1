@@ -8,12 +8,55 @@ import ContactSection from "../components/ContactSection";
 
 export default function Home() {
   const year = new Date().getFullYear();
-
   return (
     <div>
       <Head>
-        <title>Atanda Remilekun's portfolio</title>
+        <title>Atanda Remilekun - Frontend Engineer</title>
         <meta name="theme-color" content="#000000e6" />
+        {/* Primary Meta Tags */}
+        {/* <meta name="title" content="Atanda Remilekun - Frontend Engineer" />
+        <meta
+          name="description"
+          content="I'm a  front-end Engineer passionate about building acessible,
+            responsive and aesthetically pleasing web apps / websites that users love. I
+            work on the back-end also"
+        /> */}
+
+        {/* Open Graph / Facebook */}
+        {/* <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://metatags.io/" />
+        <meta
+          property="og:title"
+          content="Atanda Remilekun - Frontend Engineer"
+        /> */}
+        {/* <meta
+          property="og:description"
+          content="I'm a  front-end Engineer passionate about building acessible,
+            responsive and aesthetically pleasing web apps / websites that users love. I
+            work on the back-end also"
+        /> */}
+        {/* <meta
+          property="og:image"
+          content="https://metatags.io/images/meta-tags.png"
+        /> */}
+
+        {/* Twitter */}
+        {/* <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta
+          property="twitter:title"
+          content="Atanda Remilekun - Frontend Engineer"
+        />
+        <meta
+          property="twitter:description"
+          content="I'm a  front-end Engineer passionate about building acessible,
+            responsive and aesthetically pleasing web apps / websites that users love. I
+            work on the back-end also"
+        />
+        <meta
+          property="twitter:image"
+          content="https://metatags.io/images/meta-tags.png"
+        /> */}
       </Head>
       <Navbar />
       <Hero />

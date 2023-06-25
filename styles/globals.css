@@ -13,7 +13,9 @@ body {
   color: white;
   overflow-x: hidden;
 }
-
+.loader {
+  margin-top: 10px;
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -52,8 +54,9 @@ section {
   background-color: #191919;
 }
 .logo {
-  letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
 .navbar {
@@ -77,6 +80,7 @@ section {
   justify-content: center;
   align-items: center;
 }
+
 .hero .hero-image {
   max-width: 200px;
   margin: 0 auto;
@@ -86,7 +90,7 @@ section {
 .hero .hero-image img {
   cursor: pointer;
   filter: grayscale(100%);
-  transition: 0.5s filter;
+  transition: 0.4s filter;
 }
 .hero .hero-image img:hover {
   filter: grayscale(0);
@@ -101,6 +105,7 @@ section {
 .hero p {
   margin-bottom: 1.8rem;
   text-align: center;
+  max-width: 600px;
 }
 .contact {
   display: inline-block;
@@ -232,6 +237,9 @@ textarea {
   color: white;
   resize: none;
 }
+.inputandspinner {
+  gap: 0;
+}
 .contact-container .submit {
   all: unset;
   display: block;
@@ -240,7 +248,7 @@ textarea {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px;
-  margin-top: 50px;
+  margin-top: 14px;
   margin-left: auto;
   cursor: pointer;
   font-family: inherit;
@@ -256,6 +264,14 @@ footer {
   align-items: center;
   border-top: 1px solid white;
   padding-top: 1.5rem;
+}
+.social__icons-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 9px;
+}
+.social__icons-wrapper a {
+  margin-top: 10px;
 }
 @media only screen and (min-width: 500px) {
   .skills-container h1 {
@@ -376,14 +392,15 @@ footer {
     justify-content: space-between;
     align-items: center;
   }
+  .social__icons-wrapper {
+    column-gap: 12px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   section {
     padding: 5rem 0;
   }
-  .hero {
-    padding-top: 30px;
-  }
+
   .hero h1 {
     margin-bottom: 1.5rem;
     font-size: 4rem;
@@ -392,6 +409,7 @@ footer {
   .hero p {
     margin-bottom: 1.8rem;
     text-align: left;
+    max-width: 520px;
   }
   .hero-text {
     align-items: flex-start;

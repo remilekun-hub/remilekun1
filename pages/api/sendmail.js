@@ -1,32 +1,42 @@
+import { Resend } from "resend";
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-const nodemailer = require("nodemailer");
+function validateEmail(email) {
+  // eslint-disable-next-line
+  let validEmail =
+    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return validEmail.test(email);
+}
+
 export default async function handler(req, res) {
-  // const transporter = nodemailer.createTransport({})
+  const resend = new Resend(process.env.RESEND_KEY);
   const { name, email, message } = req.body;
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      type: "OAuth2",
-      user: "renodremson@gmail.com",
-      pass: "alaga100",
-      clientId: process.env.OAUTH_CLIENTID,
-      clientSecret: process.env.OAUTH_CLIENT_SECRET,
-      refreshToken: process.env.OAUTH_REFRESH_TOKEN,
-    },
-  });
 
-  const mailoptions = {
-    from: "renodremson@gmail.com",
-    to: "atandaremilekun@gmail.com",
-    subject: `message from my portfolio website from ${name} and email: ${email}`,
-    text: message,
-  };
+  if (req.method != "POST") {
+    return res.status(405).json({ msg: "Bad request method" });
+  }
 
-  transporter.sendMail(mailoptions, (err, data) => {
-    if (err) {
-      return res.status(500).json({ status: "something went wrong" });
-    }
-    console.log("success");
-    res.status(200).json({ status: "success" });
-  });
+  if (!name || !email || !message) {
+    return res
+      .status(400)
+      .json({ msg: "name, email and message are required" });
+  }
+  const isEmailValid = validateEmail(email);
+  if (!isEmailValid) {
+    return res.status(400).json({ msg: ` ${email} is not a valid email` });
+  }
+
+  try {
+    await resend.emails.send({
+      from: "onboarding@resend.dev",
+      to: "atandaremilekun@gmail.com",
+      subject: "Enquiry from my portolio website",
+      html: `<p>${message} <br/>
+      Name: ${name} <br />
+      Email:  ${email}
+      </p>`,
+    });
+    res.status(201).json({ msg: "Mail sent" });
+  } catch (error) {
+    res.status(500).json({ msg: "something went wrong... Mail not sent" });
+  }
 }
