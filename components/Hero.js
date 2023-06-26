@@ -9,6 +9,9 @@ function Hero() {
             src="../assets/atanda remilekun.webp"
             alt="atanda remilekun"
             loading="eager"
+            width={"100%"}
+            height={"100%"}
+            // className="w-full h-full"
           />
         </div>
 
