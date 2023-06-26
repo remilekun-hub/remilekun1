@@ -14,35 +14,35 @@ export default function Home() {
         <title>Atanda Remilekun - Frontend Engineer</title>
         <meta name="theme-color" content="#000000e6" />
         {/* Primary Meta Tags */}
-        {/* <meta name="title" content="Atanda Remilekun - Frontend Engineer" />
+        <meta name="title" content="Atanda Remilekun - Frontend Engineer" />
         <meta
           name="description"
           content="I'm a  front-end Engineer passionate about building acessible,
             responsive and aesthetically pleasing web apps / websites that users love. I
             work on the back-end also"
-        /> */}
+        />
 
         {/* Open Graph / Facebook */}
-        {/* <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://metatags.io/" />
+        <meta property="og:type" content="website" />
+        {/* <meta property="og:url" content="https://metatags.io/" /> */}
         <meta
           property="og:title"
           content="Atanda Remilekun - Frontend Engineer"
-        /> */}
-        {/* <meta
+        />
+        <meta
           property="og:description"
           content="I'm a  front-end Engineer passionate about building acessible,
             responsive and aesthetically pleasing web apps / websites that users love. I
             work on the back-end also"
-        /> */}
-        {/* <meta
+        />
+        <meta
           property="og:image"
-          content="https://metatags.io/images/meta-tags.png"
-        /> */}
+          content="https://res.cloudinary.com/draqmxlg6/image/upload/v1687737448/zojlpy1h7urqzoleyihv.jpg"
+        />
 
         {/* Twitter */}
-        {/* <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://metatags.io/" />
+        <meta property="twitter:card" content="summary_large_image" />
+        {/* <meta property="twitter:url" content="https://metatags.io/" /> */}
         <meta
           property="twitter:title"
           content="Atanda Remilekun - Frontend Engineer"
@@ -55,8 +55,8 @@ export default function Home() {
         />
         <meta
           property="twitter:image"
-          content="https://metatags.io/images/meta-tags.png"
-        /> */}
+          content="https://res.cloudinary.com/draqmxlg6/image/upload/v1687737448/zojlpy1h7urqzoleyihv.jpg"
+        />
       </Head>
       <Navbar />
       <Hero />
