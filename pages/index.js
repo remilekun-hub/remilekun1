@@ -14,6 +14,7 @@ export default function Home() {
         <title>Atanda Remilekun - Frontend Engineer</title>
         <meta name="theme-color" content="#000000e6" />
         <meta name="robots" content="all" />
+        <meta name="keywords" content="atanda remilekun " />
         {/* Primary Meta Tags */}
         <meta name="title" content="Atanda Remilekun - Frontend Engineer" />
         <meta
