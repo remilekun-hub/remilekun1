@@ -34,7 +34,12 @@ function Project({ src, name, link, order, subtitle, tech }) {
 
           <p className="project-tech"> {tech.join(", ")}</p>
 
-          <a href={link} className="contact project-link" target="_blank">
+          <a
+            href={link}
+            className="contact project-link"
+            target="_blank"
+            rel="noreferrer"
+          >
             Live link
           </a>
         </div>
