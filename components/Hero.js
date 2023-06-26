@@ -5,7 +5,11 @@ function Hero() {
     <section className="hero_section" id="hero">
       <div className="container hero">
         <div className="hero-image">
-          <img src="../assets/atanda remilekun.webp" alt="atanda remilekun" />
+          <img
+            src="../assets/atanda remilekun.webp"
+            alt="atanda remilekun"
+            loading="eager"
+          />
         </div>
 
         <div className="hero-text">
