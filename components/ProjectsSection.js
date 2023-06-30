@@ -26,7 +26,7 @@ function ProjectsSection() {
             src={shortlet}
             name={"Shortlet"}
             link={"https://shortlet-alpha.vercel.app/"}
-            tech={["React", "Node js", "Mongo Db", "Express"]}
+            tech={["TypeScript", "React", "Node js", "Mongo Db", "Express"]}
             subtitle={
               "A realtor website that helps you book/reserve accomodation for short stays and put up your home for short stay"
             }
