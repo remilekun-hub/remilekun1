@@ -5,22 +5,9 @@ import { motion } from "framer-motion";
 function Project({ src, name, link, order, subtitle, tech }) {
   return (
     <div className="project">
-      <motion.div
-        className={`project-image ${order && "project-reverse"}`}
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
-        viewport={{ once: true }}
-      >
-        <Image
-          src={src}
-          alt={`${name} image`}
-          blurDataURL={src}
-          objectFit="cover"
-          placeholder="blur"
-          quality={60}
-        />
-      </motion.div>
+      <div className={`project-image ${order && "project-reverse"}`}>
+        <Image src={src} alt={`${name} image`} objectFit="cover" quality={75} />
+      </div>
       <motion.div
         className="project-text"
         initial={{ opacity: 0, y: 70 }}

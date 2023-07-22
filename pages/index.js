@@ -43,20 +43,21 @@ export default function Home() {
         />
 
         {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://remilekun.vercel.app/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://remilekun.vercel.app/" />
         <meta
-          property="twitter:title"
+          name="twitter:title"
           content="Atanda Remilekun - Frontend Engineer"
         />
         <meta
-          property="twitter:description"
+          name="twitter:description"
           content="I'm a  front-end Engineer passionate about building acessible,
             responsive and aesthetically pleasing web apps / websites that users love. I
             work on the back-end also"
         />
+
         <meta
-          property="twitter:image"
+          name="twitter:image"
           content="https://res.cloudinary.com/draqmxlg6/image/upload/v1687737448/zojlpy1h7urqzoleyihv.jpg"
         />
       </Head>
