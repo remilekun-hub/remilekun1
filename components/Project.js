@@ -12,7 +12,7 @@ function Project({ src, name, link, order, subtitle, tech }) {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        <Image src={src} alt={`${name} image`} objectFit="cover" quality={75} />
+        <Image src={src} alt={`${name} image`} objectFit="cover" quality={75} loading="eager" />
       </motion.div>
       <motion.div
         className="project-text"
