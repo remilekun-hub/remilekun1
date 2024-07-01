@@ -26,7 +26,7 @@ function ProjectsSection() {
 				<div className="bottom">
 					<Project
 						src={detmo}
-						name={"Detmo"}
+						name={"Detmo (Desktop App)"}
 						link={"https://detmo-ruby.vercel.app/"}
 						tech={[
 							"Typescript, React, Next js",
@@ -41,15 +41,11 @@ function ProjectsSection() {
 						src={stackivy}
 						name={"Stackivy Admin Dashboard"}
 						link={"https://stackivyadmin2.netlify.app/"}
-						tech={[
-							"React",
-							"Tailwind css",
-							"JavaScript",
-						]}
+						tech={["React", "Tailwind css", "JavaScript"]}
 						subtitle={
 							"An Admin dashboard app that monitors and manage all activities in stackivy organisation"
 						}
-            order
+						order
 					/>
 
 					<Project
