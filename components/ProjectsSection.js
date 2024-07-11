@@ -10,6 +10,8 @@ import clipboard from "../public/assets/clipboard.webp";
 import shortlet from "../public/assets/shortlet.webp";
 import detmo from "../public/assets/detmo.png";
 import stackivy from "../public/assets/stackivy.png";
+import ardillaretail from "../public/assets/ardilla-retail.png";
+import hargon from "../public/assets/Hargon.png";
 
 function ProjectsSection() {
 	return (
@@ -24,6 +26,36 @@ function ProjectsSection() {
 				</div>
 
 				<div className="bottom">
+					<Project
+						src={hargon}
+						name={"Hargon"}
+						link={"https://www.hargon.africa"}
+						tech={[
+							"Typescript, React, Next js",
+							"Tailwind css",
+							"Framer motion",
+						]}
+						subtitle={
+							"Hargon website. The all in one platform for all your financial needs, whether business or personal."
+						}
+					/>
+
+					<Project
+						src={ardillaretail}
+						name={"Ardilla Retail"}
+						link={"https://ardilla-retail.vercel.app/"}
+						tech={[
+							"Typescript, React, Next js",
+							"Tailwind css",
+							"Rest API",
+							"Data Visualization",
+							"Jest",
+						]}
+						subtitle={
+							"Admin dashboard that provides real-time insights and control of transactions and analytics of Ardilla Retail"
+						}
+						order
+					/>
 					<Project
 						src={detmo}
 						name={"Detmo (Desktop App)"}
