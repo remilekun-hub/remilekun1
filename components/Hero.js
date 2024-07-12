@@ -8,9 +8,9 @@ function Hero() {
 					<img
 						src="../assets/atanda remilekun.webp"
 						alt="atanda remilekun"
-						loading="eager"
 						width={"100%"}
 						height={"100%"}
+						priority
 						// className="w-full h-full"
 					/>
 				</div>
