@@ -51,14 +51,14 @@ const data = [
       },
     ],
   },
-  // {
-  //   title: "Cms",
-  //   subtitle: [
-  //     {
-  //       name: "Wordpress",
-  //     },
-  //   ],
-  // },
+  {
+    title: "Cms",
+    subtitle: [
+      {
+        name: "Wordpress",
+      },
+    ],
+  },
   {
     title: "Tools",
     subtitle: [
